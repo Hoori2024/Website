@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hoori-front-deployment
+spec:
+  selector:
+    matchLabels:
+      app: hoori-front
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: hoori-front
+    spec:
+      containers:
+      - name: hoori-front
+        image: deyssautierloic/hoori-front
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: hoori-front-service
+spec:
+  type: NodePort
+  selector:
+    app: hoori-front
+  ports:
+  - name: front
+    port: 4100
+    targetPort: 4100
+  
