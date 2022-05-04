@@ -1,6 +1,6 @@
 # Website
 ### Attention the front is on port 3000 and the back on port 4001
-## Local
+## Run locally
 In the frontend and backend folders, for initialization :
 ```
 npm i
