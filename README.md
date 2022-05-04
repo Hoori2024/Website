@@ -9,8 +9,6 @@ for run :
 ```
 npm start
 ```
-### Backend
-In backend folder :
 ## Docker
 ### Frontend
 In frontend folder for build :
