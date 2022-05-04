@@ -1,5 +1,16 @@
 # Website
-
+### Attention the front is on port 3000 and the back on port 4001
+## Local
+In the frontend and backend folders, for initialization :
+```
+npm i
+```
+for run :
+```
+npm start
+```
+### Backend
+In backend folder :
 ## Docker
 ### Frontend
 In frontend folder for build :
