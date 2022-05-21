@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+// Set your brand colors
+$Card1Color: #D5D1C6;
+$Card2Color: #9EAD84;
+$Card3Color: #547D54
+
+// Update Bulma's global variables
+
+
+// Update some of Bulma's component variables
+$card-background-color: $Card1Color;
+$card-radius: 15;
+$border-top-left-radius: 15;
+.card
+    width: 465px;
+    height: 829px;
+
+.card-image
+    margin-left: auto;
+    margin-right: auto;
+    width: 381px;
+    height: 227px;
+
+.card
+    text-align: center;
+
+.card-content
+    margin-bottom: 59px;
+
+.media-content
+    margin-left: 46px;
+    margin-right: 46px;
+    margin-top: 100px
+
+// Import only what you need from Bulma
+@import '../../../node_modules/bulma/sass/utilities/_all.sass';
+@import '../../../node_modules/bulma/sass/base/_all.sass';
+@import '../../../node_modules/bulma/sass/elements/button.sass';
+@import '../../../node_modules/bulma/sass/elements/container.sass';
+@import '../../../node_modules/bulma/sass/elements/form.sass';
+@import '../../../node_modules/bulma/sass/elements/title.sass';
+@import '../../../node_modules/bulma/sass/components/card.sass';
+@import '../../../node_modules/bulma/sass/components/navbar.sass';
+@import '../../../node_modules/bulma/sass/layout/hero.sass';
+@import '../../../node_modules/bulma/sass/layout/section.sass';
