@@ -7,5 +7,5 @@ test('renders learn react link', () => {
   function linkElement() {
     return screen.getByText(/learn react/i);
   }
-  expect(linkElement).toBeInTheDocument();
+  expect(linkElement()).toBeInTheDocument();
 });
