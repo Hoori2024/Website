@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+// Import a Google Font
+
+// Set your brand colors
+$Card1Color: #D5D1C6;
+$clearBG: #FFF;
+$BtnClr: #9EAD84;
+$BtnClrHover: #547D54;
+
+
+// Update Bulma's global variables
+
+$button-background-color: $BtnClr;
+$button-padding-vertical: 1.5em;
+$button-padding-horizontal: 2em;
+
+// Update some of Bulma's component variables
+
+.card
+    margin-top: 90px;
+    position: absolute;
+    z-index: 10;
+    background-color: $Card1Color;
+    width: 569px;
+    margin-left: 350px;
+
+.content
+    margin-right: 200px;
+    font-size: 24px;
+
+.bulma-center-mixin
+    position: absolute;
+    z-index: 13;
+    margin-left: 800px;
+    margin-top: 125px;
+    width: 600px;
+
+
+// Import only what you need from Bulma
+@import '../../../node_modules/bulma/sass/utilities/_all.sass';
+@import '../../../node_modules/bulma/sass/base/_all.sass';
+@import '../../../node_modules/bulma/sass/grid/_all.sass';
+@import '../../../node_modules/bulma/sass/elements/button.sass';
