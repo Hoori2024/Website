@@ -5,7 +5,7 @@ import './FaqCard.sass'
 export default function FaqCard() {
     return (
         <div>
-            <div className="card">
+            <div className="cardFaq">
                 <div className="card-content">
                     <div className="content">
                         <p>Vous Avez des questions ?</p>

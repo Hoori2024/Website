@@ -12,10 +12,15 @@ export default function HomePage() {
         <div className="has-background-white">
             <Navbar />
             <img src={LogoAndField} id='Field' className='LogoOnField' alt='field'/>
+            <div className='SpaceBetween'></div>
             <Card/>
-            {/*<Hoori /> 
+            <div className='SpaceBetween'></div>
+            <Hoori />
+            <div className='SpaceBetween'></div>
             <FaqCard />
-    <Footer />*/}
+            <div className='SpaceBetween'></div>
+            {<Footer />
+            }
         </div>
     );
 
