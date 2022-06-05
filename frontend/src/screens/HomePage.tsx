@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../components/headers/Headers';
 import LogoAndField from '../assets/image/LogoAndField.png'
 import './HomePage.css';
+import './HomePage.sass';
 import Card from '../components/card/Card';
 import Hoori from '../components/presentation/Hoori';
 import FaqCard from '../components/faqCard/FaqCard';
@@ -13,14 +14,23 @@ export default function HomePage() {
             <Navbar />
             <img src={LogoAndField} id='Field' className='LogoOnField' alt='field'/>
             <div className='SpaceBetween'></div>
-            <Card/>
+            <div className="columns">
+                <div className="column">
+                    <Card/>
+                </div>
+                <div className="column">
+                    <Card/>
+                </div>
+                <div className="column">
+                    <Card/>
+                </div>
+            </div>
             <div className='SpaceBetween'></div>
             <Hoori />
             <div className='SpaceBetween'></div>
             <FaqCard />
             <div className='SpaceBetween'></div>
-            {<Footer />
-            }
+            <Footer />
         </div>
     );
 

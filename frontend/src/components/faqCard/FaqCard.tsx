@@ -7,12 +7,14 @@ export default function FaqCard() {
         <div>
             <div className="cardFaq">
                 <div className="card-content">
-                    <div className="content">
+                    <div className="contentFaqCard">
                         <p>Vous Avez des questions ?</p>
                         <p>Allez voir notre section FAQ, Nous y répondont déjà. Ce n’est pas le cas ? Contactez-nous !</p>
                         <p>Contactez-nous !</p>
                     </div>
-                    <button className="button is-large"><p>Par ici</p></button>
+                    <div className='buttonSpace'>
+                        <button className="button is-large"><p>Par ici</p></button>
+                    </div>
                 </div>
             </div>
             <img className="bulma-center-mixin" src={Faq} />
