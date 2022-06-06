@@ -7,6 +7,9 @@ import Card from '../components/card/Card';
 import Hoori from '../components/presentation/Hoori';
 import FaqCard from '../components/faqCard/FaqCard';
 import Footer from '../components/footer/Footer';
+import Datura from '../assets/image/datura.png'
+import DroneField from '../assets/image/DroneField.png'
+import LandDrone from '../assets/image/landDrone.png'
 
 export default function HomePage() {
     return (
@@ -14,15 +17,20 @@ export default function HomePage() {
             <Navbar />
             <img src={LogoAndField} id='Field' className='LogoOnField' alt='field'/>
             <div className='SpaceBetween'></div>
-            <div className="columns">
-                <div className="column">
-                    <Card/>
-                </div>
-                <div className="column">
-                    <Card/>
-                </div>
-                <div className="column">
-                    <Card/>
+            <div className='HomeBody'>
+                <div className="columns">
+                    <div className="column">
+                        <Card title="Datura"
+                        image={Datura}/>
+                    </div>
+                    <div className="column">
+                        <Card title="Drone aérien"
+                        image={DroneField}/>
+                    </div>
+                    <div className="column">
+                        <Card title="Drone terrestre"
+                        image={LandDrone}/>
+                    </div>
                 </div>
             </div>
             <div className='SpaceBetween'></div>

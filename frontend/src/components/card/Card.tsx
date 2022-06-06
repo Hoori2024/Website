@@ -1,16 +1,15 @@
 import React from 'react';
 import './Card.sass';
-import Datura from '../../assets/image/datura.png'
 
-export default function Card() {
+export default function Card(props: any) {
     return (
         <div className="card">
             <div className="card-content">
-                <p className="title">Datura</p>
+                <p className="title">{props.title}</p>
             </div>
             <div className="card-image">
                 <figure className="image is-4by3">
-                    <img src={Datura} alt="Placeholder image" />
+                    <img src={props.image} alt="Placeholder image" />
                 </figure>
             </div>
             <div className="media-content">
