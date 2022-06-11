@@ -10,10 +10,9 @@ export default function Navbar() {
       <div className='navbar-brand'>
         <a href='/' className='navbar-item'>
           <img
+            className='LogoHoori'
             src={HooriLogo}
             alt='Logo'
-            width='112'
-            height='28'
           />
         </a>
         <a
@@ -35,7 +34,7 @@ export default function Navbar() {
         <div className='navbar-end'>
           <div className='navbar-item'>
             <a href='/' className='navbar-item'>
-              Home
+              Accueil
             </a>
             <a href='/' className='navbar-item'>
               FAQ

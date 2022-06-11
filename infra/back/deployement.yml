@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hoori-back-deployment
+spec:
+  selector:
+    matchLabels:
+      app: hoori-back
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: hoori-back
+    spec:
+      containers:
+      - name: hoori-back
+        image: deyssautierloic/hoori-back
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: hoori-back-service
+spec:
+  type: NodePort
+  selector:
+    app: hoori-back
+  ports:
+  - name: back
+    port: 3000
+    targetPort: 3000
+  
