@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+
 import HooriLogo from './../../assets/image/HooriLogo.png' 
 import './Headers.sass';
 
@@ -36,15 +38,15 @@ export default function Navbar() {
             <a href='/' className='navbar-item'>
               Accueil
             </a>
-            <a href='/' className='navbar-item'>
+            <Link to="/" className='navbar-item'>
               FAQ
-            </a>
-            <a href='/' className='navbar-item'>
+            </Link>
+            <Link to="/" className='navbar-item'>
               Nous Contacter
-            </a>
-            <a href='/' className='navbar-item'>
+            </Link>
+            <Link to="/signin" className='navbar-item'>
               Connexion
-            </a>
+            </Link>
           </div>
         </div>
       </div>

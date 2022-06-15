@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+// Set your brand colors
+$BtnClr: #9EAD84;
+// Update Bulma's global variables
+$footer-background-color: $BtnClr;
+$footer-padding: 0.5rem;
+// Update some of Bulma's component variables
+
+.footerBox
+    margin-top: 1.5rem;
+
+// Import only what you need from Bulma
+@import '../../../node_modules/bulma/sass/utilities/_all.sass';
+@import '../../../node_modules/bulma/sass/layout/footer.sass';
