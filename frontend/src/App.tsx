@@ -4,8 +4,6 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import logo from './logo.svg';
-import Navbar from './components/headers/Headers';
 import HomePage from './screens/HomePage';
 import './App.css';
 import SigninPage from './screens/Signin/SigninPage'
@@ -18,7 +16,6 @@ function App() {
       <Route path="/" element={<HomePage />} />
       <Route path="signin" element={<SigninPage />} />
       <Route path="signup" element={<SignupPage />} />
-      
       </Routes>
     </BrowserRouter>
 
