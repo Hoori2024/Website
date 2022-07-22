@@ -1,4 +1,4 @@
-FROM node:lts-alpine AS front-build
+FROM node:lts-alpine AS front-dashboard-build
 
 WORKDIR /app
 
