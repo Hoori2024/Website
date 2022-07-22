@@ -13,11 +13,29 @@ on:
 
 
 jobs:
-  front:
+  frontShowcase:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: 'frontend'
+        working-directory: 'frontend/showcaseWebsites/'
+    strategy:
+      matrix:
+        node-version: [16.x]
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+        cache-dependency-path: '**/package-lock.json'
+    - run: npm install
+    - run: npm test
+  frontDashboard:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: 'frontend/dashboardWebsite/'
     strategy:
       matrix:
         node-version: [16.x]
